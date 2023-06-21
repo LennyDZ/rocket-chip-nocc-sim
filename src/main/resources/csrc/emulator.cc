@@ -280,7 +280,7 @@ done_processing:
   // Rocket-chip requires synchronous reset to be asserted for several cycles.
   int sync_reset_cycles = 10;
 
-  while (trace_count < max_cycles) {
+  while (trace_count < max_cycles && !Verilated::gotFinish()) {
     if (done_reset && (dtm->done() || jtag->done() || tile->io_success))
       break;
 

@@ -12,13 +12,13 @@ _start:
 .section .text.hang, "ax", @progbits
 .globl _hang
 _hang:
-  csrwi 0x7c1, 0 // disable chicken bits
-  csrr a0, mhartid
-  la a1, _dtb
-  csrwi mie, 0
-1:
-  wfi
-  j 1b
+  csrwi 0x7c1, 0    // disable chicken bits    chicken bit = bit to used to disable some feature (so here we disable the possibility of diabling stuff apparently)
+  csrr a0, mhartid  //read thread id from csr (some mem for cpu infos)
+  la a1, _dtb       //load _dtb address
+  li t1, 0
+  csrwi mie, 1
+  li s0, DRAM_BASE
+  jr s0
 
 .section .rodata.dtb, "a", @progbits
 .globl _dtb
