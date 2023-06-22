@@ -10,7 +10,7 @@ The original README for the Rocket-chip has been moved to `/docs/rocket-chip_rea
 
 ## Compile and run test :
 
-You can compile the chip using the same process as in the Rocket-Chip repo (using `Config=... make(-debug)`)
+You can compile the chip for simulation in the `/emulator` dir. using the same process as in the Rocket-Chip repo (using `Config=... make(-debug)`)
 
 To run a test file, you can use 
 ```
