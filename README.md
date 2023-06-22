@@ -2,7 +2,7 @@
 
 This repo contains a modified version of the Rocket-Chip repo that allows to run simulation with a different flow that doesn't rely on FESVR/JTAG.
 
-All credits for the orginial project goes to it ([Rocket-Chip](https://github.com/chipsalliance/rocket-chip/tree/master)), And [this paper](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-17.html)
+All credits for the orginial project goes to it ([Rocket-Chip](https://github.com/chipsalliance/rocket-chip/tree/master)) and to [this paper](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-17.html) authors
 
 Using this repo has the same requirement as the original repo (mostly having riscv-toolchain installed)
 
